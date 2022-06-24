@@ -19,8 +19,8 @@
 
   const navStateCheck = () => {
     const state = navState;
-    navState = state === null ? false : state;
-
+    // navState = state === null ? false : state;
+    navState = typeof state !== "object" ? false : state;
     navOnOff();
     $body.style.visibility = "visible";
   };
@@ -34,7 +34,6 @@
   const init = () => {
     window.addEventListener("DOMContentLoaded", navStateCheck);
     $btn.addEventListener("click", toggle);
-    // $body.style.visibility = "visible";
   };
 
   init();
