@@ -28,5 +28,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
